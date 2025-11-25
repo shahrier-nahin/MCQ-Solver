@@ -3,7 +3,7 @@ from PIL import Image
 import pytesseract
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyD7fq_XHMUY3CkOlD6vRmYKiFzRIuoiook")
+genai.configure(api_key=st.secrets["GENAI_API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
