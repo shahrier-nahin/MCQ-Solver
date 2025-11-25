@@ -2,3 +2,5 @@ streamlit
 pytesseract
 Pillow
 google-generativeai
+tesseract-ocr
+libtesseract-dev
