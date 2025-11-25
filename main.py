@@ -5,7 +5,7 @@ import google.generativeai as genai
 
 genai.configure(api_key=st.secrets["GENAI_API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 
 st.set_page_config(page_title="MCQ Solver", layout="wide")
 st.title("📚 Real-Time MCQ Solver")
